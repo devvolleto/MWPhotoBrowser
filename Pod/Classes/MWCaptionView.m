@@ -14,7 +14,6 @@ static const CGFloat labelPadding = 10;
 
 // Private
 @interface MWCaptionView () {
-    id <MWPhoto> _photo;
     UILabel *_label;    
 }
 @end

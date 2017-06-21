@@ -270,9 +270,12 @@
         maxScale = 4;
     }
     
-    // Image is smaller than screen so no zooming!
-    if (xScale >= 1 && yScale >= 1) {
-        minScale = 1.0;
+    //aspect fill images with bounds smaller than screen
+    if (xScale >= 3 && yScale >= 3) {
+        minScale = 3
+    }
+    if (maxScale <= minScale) {
+        maxScale = minScale +2
     }
     
     // Set min/max zoom

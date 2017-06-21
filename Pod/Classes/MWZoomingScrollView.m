@@ -272,10 +272,10 @@
     
     //aspect fill images with bounds smaller than screen
     if (xScale >= 3 && yScale >= 3) {
-        minScale = 3
+        minScale = 3;
     }
     if (maxScale <= minScale) {
-        maxScale = minScale +2
+        maxScale = minScale +2;
     }
     
     // Set min/max zoom
